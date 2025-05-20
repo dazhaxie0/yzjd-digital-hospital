@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+canvas{
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    display: block;
+    position: fixed;
+}
+
+.bottom-buttons {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.05);
+  z-index: 1000;
+}
+.bottom-buttons button {
+  flex: 1;
+  margin: 0 4px;
+  padding: 10px 0;
+  font-size: 16px;
+  border: none;
+  background: #f0f0f0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.bottom-buttons button:hover {
+  background: #e0e0e0;
+
+}
+
+.tower-menu {
+  display: none;
+  position: absolute;
+  bottom: 60px;
+  right: 10px;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  border-radius: 8px;
+  padding: 8px 0;
+  z-index: 2000;
+  flex-direction: column;
+}
+.tower-menu button {
+  width: 160px;
+  margin: 4px 12px;
+  padding: 8px 0;
+  font-size: 15px;
+  border: none;
+  background: #f0f0f0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+.tower-menu button:hover {
+  background: #e0e0e0;
+  transform: scale(1.05);
+}
